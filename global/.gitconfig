@@ -1,0 +1,19 @@
+[user]
+	name = Benjamin Linskey
+	email = git@linskey.org
+[push]
+	default = simple
+[commit]
+	verbose = true
+[core]
+	excludesfile = ~/.gitignore_global
+[merge]
+	tool = vimdiff
+[tag]
+	sort = version:refname
+[color]
+	ui = false
+[init]
+	defaultBranch = main
+[pull]
+	rebase = false

@@ -1,0 +1,53 @@
+[/]
+confirm-close=false
+default-show-menubar=false
+menu-accelerator-enabled=true
+theme-variant='system'
+
+[keybindings]
+toggle-menubar='<Alt>m'
+
+[profiles:]
+default='897e85c0-341b-4e1a-8d74-0e36175890c7'
+list=['08d6633f-d524-4e1a-a003-5fbe40cea63d', '251f9fe1-02f6-42c5-a556-d1403a06fbde', '897e85c0-341b-4e1a-8d74-0e36175890c7']
+
+[profiles:/:08d6633f-d524-4e1a-a003-5fbe40cea63d]
+audible-bell=false
+background-color='rgb(34,34,34)'
+bold-color-same-as-fg=true
+bold-is-bright=false
+cursor-blink-mode='off'
+font='Source Code Pro 10'
+foreground-color='rgb(238,238,238)'
+login-shell=true
+palette=['rgb(34,34,34)', 'rgb(226,120,120)', 'rgb(180,190,130)', 'rgb(226,164,120)', 'rgb(132,160,198)', 'rgb(160,147,199)', 'rgb(137,184,194)', 'rgb(238,238,238)', 'rgb(102,102,102)', 'rgb(233,137,137)', 'rgb(192,202,142)', 'rgb(233,177,137)', 'rgb(145,172,209)', 'rgb(173,160,211)', 'rgb(149,196,206)', 'rgb(255,255,255)']
+scrollbar-policy='never'
+text-blink-mode='never'
+use-system-font=true
+use-theme-colors=false
+visible-name='Iceberg'
+
+[profiles:/:251f9fe1-02f6-42c5-a556-d1403a06fbde]
+audible-bell=false
+background-color='rgb(238,238,236)'
+cursor-blink-mode='off'
+foreground-color='rgb(46,52,54)'
+login-shell=true
+palette=['rgb(46,52,54)', 'rgb(204,0,0)', 'rgb(78,154,6)', 'rgb(196,160,0)', 'rgb(52,101,164)', 'rgb(117,80,123)', 'rgb(6,152,154)', 'rgb(211,215,207)', 'rgb(85,87,83)', 'rgb(239,41,41)', 'rgb(138,226,52)', 'rgb(252,233,79)', 'rgb(114,159,207)', 'rgb(173,127,168)', 'rgb(52,226,226)', 'rgb(238,238,236)']
+scrollbar-policy='never'
+text-blink-mode='never'
+use-theme-colors=false
+visible-name='light'
+
+[profiles:/:897e85c0-341b-4e1a-8d74-0e36175890c7]
+audible-bell=false
+background-color='rgb(46,52,54)'
+font='Monospace 12'
+foreground-color='rgb(211,215,207)'
+palette=['rgb(46,52,54)', 'rgb(204,0,0)', 'rgb(78,154,6)', 'rgb(196,160,0)', 'rgb(52,101,164)', 'rgb(117,80,123)', 'rgb(6,152,154)', 'rgb(211,215,207)', 'rgb(85,87,83)', 'rgb(239,41,41)', 'rgb(138,226,52)', 'rgb(252,233,79)', 'rgb(114,159,207)', 'rgb(173,127,168)', 'rgb(52,226,226)', 'rgb(238,238,236)']
+use-system-font=false
+use-theme-colors=false
+visible-name='default'
+
+[profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
+use-theme-colors=true

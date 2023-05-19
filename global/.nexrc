@@ -1,0 +1,5 @@
+set autoindent
+set cedit=
+set iclower
+set leftright
+set wraplen=79

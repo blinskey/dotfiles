@@ -1,0 +1,19 @@
+# Tagfiles
+tags
+
+# Vim swapfiles
+*.swp
+*.swo
+
+# Vim session file
+Session.vim
+
+# Python bytecode
+*.pyc
+__pycache__
+
+# MyPy data
+.mypy_cache
+
+# Mac Finder data
+.DS_Store
