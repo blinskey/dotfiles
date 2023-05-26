@@ -1,6 +1,12 @@
 # Initialization for all Bourne-compatible shells.
 
 export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:/bin:/sbin:/usr/bin:/usr/sbin
+
+# Add MacPorts directories to PATH on macOS.
+if [ "$(uname)" = "Darwin" ]; then
+	export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+fi
+
 if [ "$SHELL" == /bin/ksh ]; then
     export ENV=$HOME/.kshrc
 elif [ "$SHELL" == /bin/bash ]; then
