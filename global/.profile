@@ -40,8 +40,12 @@ export NO_COLOR=1
 
 export LESSHISTFILE=-
 
-# On Windows, run keychain to enable ssh-agent sharing across shells.
+# Windows Subsystem for Linux
 if [ -f /proc/version ] && grep -qi microsoft /proc/version; then
+	# Run keychain to enable ssh-agent sharing across shells.
 	/usr/bin/keychain -q --nogui $HOME/.ssh/id_rsa
 	. $HOME/.keychain/$(hostname -s)-sh
+
+	# Add Windows OpenSSH directory to PATH to enable 1Password integration.
+	export PATH="${PATH}:/mnt/c/Windows/System32/OpenSSH"
 fi
