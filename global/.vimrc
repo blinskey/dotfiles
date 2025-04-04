@@ -106,7 +106,11 @@ let g:fzf_colors =
 
 let g:ale_set_signs = 0
 let g:ale_virtualtext_cursor = 'disabled'
-let g:ale_linters = {'python': ['flake8', 'mypy']}
+let g:ale_linters =
+	\ {
+	\ 'python': ['flake8', 'mypy'],
+	\ 'c': ['cc']
+	\ }
 
 " Strip trailing whitespace on write, preserving window view.
 function! s:StripTrailingWhitespace()
@@ -132,3 +136,6 @@ if executable("rg")
 else
 	set grepprg=grep\ -rIn\ $*\ /dev/null
 endif
+
+" Treat .h files as C, not C++.
+let g:c_syntax_for_h = 1
