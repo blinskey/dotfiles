@@ -22,6 +22,6 @@ git_install() {
 mkdir -p $PLUGDIR
 
 git_install https://github.com/blinskey/btl.vim.git
-git_install https://github.com/cocopon/iceberg.vim
+git_install https://github.com/blinskey/iceberg.vim.git
 git_install https://github.com/ctrlpvim/ctrlp.vim.git
 git_install https://github.com/dense-analysis/ale.git
