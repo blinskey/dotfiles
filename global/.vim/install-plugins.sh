@@ -12,11 +12,15 @@ git_install() {
 	dest="$PLUGDIR/$name"
 
 	if [ -d "$dest" ]; then
-		printf "%s\n" "Skipping $name: Directory not empty."
-		return
+		printf "%s\n" "$name already exists."
+	else
+		git clone --depth 1 "$1" "$dest"
 	fi
 
-	git clone --depth 1 "$1" "$dest"
+	docs=$dest/doc
+	if [ -d "$docs" ]; then
+		vim -u NONE -e -s -c "helptags $docs" -c q
+	fi
 }
 
 mkdir -p $PLUGDIR
