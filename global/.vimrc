@@ -100,3 +100,6 @@ endif
 
 " Treat .h files as C, not C++.
 let g:c_syntax_for_h = 1
+
+" CtrlP mapping
+let g:ctrlp_map = '<leader>f'
