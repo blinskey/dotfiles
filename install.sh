@@ -36,3 +36,6 @@ for f in .*; do
         ln -sf $PWD/$f $HOME
     fi
 done
+
+# Install Vim plugins.
+.vim/install-plugins.sh

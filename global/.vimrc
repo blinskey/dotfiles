@@ -6,30 +6,12 @@ augroup vimrc
 	autocmd!
 augroup END
 
-if !empty(glob('~/.vim/autoload/plug.vim'))
-	silent! call plug#begin('~/.vim/plugged')
-	" Use the local development copy of my colorscheme if present.
-	if !empty(glob('~/src/btl.vim'))
-		Plug '~/src/btl.vim'
-	else
-		Plug 'blinskey/btl.vim'
-	endif
-
-	Plug 'dense-analysis/ale'
-	Plug 'editorconfig/editorconfig-vim'
-
-	if executable('fzf')
-		Plug 'junegunn/fzf'
-
-		" This plugin provides additional fuzzy-finder commands for
-		" searching things like buffers and tags.
-		"Plug 'junegunn/fzf.vim'
-	endif
-	call plug#end()
-endif
-
 filetype plugin indent on
+
+" Built-in plugins
 silent! packadd! matchit
+silent! packadd! editorconfig " Vim 9.1
+silent! packadd! comment " Vim 9.1.?
 
 silent! syntax enable
 set background=dark
@@ -82,27 +64,6 @@ map <leader>e :Explore<cr>
 map <leader>s :Sexplore<cr>
 map <leader>v :Vexplore<cr>
 let g:netrw_banner = 0  " Hide banner.
-
-map <leader><leader> :FZF<cr>
-map <leader>f :FZF<cr>
-
-" Set fzf colors to match color scheme. From :h fzf.
-let g:fzf_colors =
-	\ {
-	\ 'fg':		['fg', 'Normal'],
-	\ 'bg':		['bg', 'Normal'],
-	\ 'hl':		['fg', 'Comment'],
-	\ 'fg+':	['fg', 'CursorLine', 'CursorColumn', 'Normal'],
-	\ 'bg+':	['bg', 'CursorLine', 'CursorColumn'],
-	\ 'hl+':	['fg', 'Statement'],
-	\ 'info':	['fg', 'PreProc'],
-	\ 'border':	['fg', 'Ignore'],
-	\ 'prompt':	['fg', 'Conditional'],
-	\ 'pointer':	['fg', 'Exception'],
-	\ 'marker':	['fg', 'Keyword'],
-	\ 'spinner':	['fg', 'Label'],
-	\ 'header':	['fg', 'Comment']
-	\ }
 
 let g:ale_set_signs = 0
 let g:ale_virtualtext_cursor = 'disabled'
