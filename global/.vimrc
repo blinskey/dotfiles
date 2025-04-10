@@ -103,3 +103,4 @@ let g:c_syntax_for_h = 1
 
 " CtrlP mapping
 let g:ctrlp_map = '<leader>f'
+let g:ctrlp_custom_ignore = '\v.+\.(gcda|gcno)$'
