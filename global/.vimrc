@@ -15,7 +15,7 @@ silent! packadd! comment " Vim 9.1.?
 
 silent! syntax enable
 set background=dark
-silent! colorscheme btl
+silent! colorscheme iceberg
 
 set shortmess+=I  " No intro message on startup.
 set encoding=utf-8
