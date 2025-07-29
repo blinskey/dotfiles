@@ -13,6 +13,8 @@ silent! packadd! matchit
 silent! packadd! editorconfig " Vim 9.1
 silent! packadd! comment " Vim 9.1.?
 
+runtime! ftplugin/man.vim
+
 silent! syntax enable
 set background=dark
 silent! colorscheme iceberg
@@ -101,6 +103,8 @@ endif
 " Treat .h files as C, not C++.
 let g:c_syntax_for_h = 1
 
-" CtrlP mapping
+" CtrlP
 let g:ctrlp_map = '<leader>f'
 let g:ctrlp_custom_ignore = '\v.+\.(gcda|gcno)$'
+let g:ctrlp_cache_dir = $HOME.'/tmp/ctrlp'
+noremap <leader>c :CtrlPClearCache<CR>
