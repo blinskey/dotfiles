@@ -25,7 +25,7 @@ fi
 
 # Set editor. Use vim if available, or vi otherwise.
 if type vim >/dev/null 2>&1; then
-    export VISUAL='vim -u $HOME/.vimrc'
+    export VISUAL='vim'
 else
     export VISUAL=vi
 fi
